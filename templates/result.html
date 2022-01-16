@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>WT CP PREDICTION</title>
+       <!-- <link rel="stylesheet" href="C:\Users\stark\Desktop\Course Projects\WT\WT_CP_FLASK\static\styles.css">-->
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <div class="container">
+           
+        <h1 style="font-size: 4em; color:white;text-align:center;; font-family: Open Sans; color: #ff4b4b;">FootBall Match Prediction</h1>
+          
+          <h1 style="color:white;text-align:center; font-family: Lucida Console, Courier, monospace; ">Winning Team Is </h1><br>
+             
+
+          </div>
+
+        <!-- Prediction Area -->
+        <div class="prediction-area">
+
+            <!-- IPL Banner - 1 -->
+            <div class='ipl-banner-left'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='f.jpg') }}" alt="Ipswich">
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='g.jpg') }}" alt="Newcastle">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='i.jpg') }}" alt="Middlesbrough">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='d.png') }}" alt="Aston Villa">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='a.jpg') }}" alt="Everton">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='b.jpg') }}" alt="Man City">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='c.jpg') }}" alt="Bradford">
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='e.jpg') }}" alt="Arsenal">
+                        </div>
+
+                    </div>
+       
+</div>
+            </div>
+
+			<!-- Result -->
+			<div class="results">   
+                <h1 style="color:white;text-align:center; font-family: Lucida Console, Courier, monospace; ">The final prediction: {{ pred}} </h1><br>
+			</div>
+
+            <!-- IPL Banner - 2 -->
+            <div class='ipl-banner-right'>
+
+                <div class="slider-frame">
+                    <div class="slide-images-down">
+
+                        <!-- Image-1 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='a.jpg') }}" alt="Ipswich">
+                        </div>
+                        <!-- Image-2 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='b.jpg') }}" alt="Newcastle">
+                        </div>
+                        <!-- Image-3 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='c.jpg') }}" alt="Middlesbroughe">
+                        </div>
+                        <!-- Image-4 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='d.png') }}" alt="Aston Villa">
+                        </div>
+                        <!-- Image-5 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='e.jpg') }}" alt="Everton">
+                        </div>
+                        <!-- Image-6 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='f.jpg') }}" alt="Man City">
+                        </div>
+                        <!-- Image-7 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='g.jpg') }}" alt="Bradford">
+                        </div>
+                        <!-- Image-8 -->
+                        <div class="image-container">
+                            <img class="image-width" src="{{ url_for('static', filename='i.jpg') }}" alt="Arsenal">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
